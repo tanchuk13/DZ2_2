@@ -1,0 +1,93 @@
+body {
+    background: url(img/back.jpg);
+   } 
+
+   #main {
+	width: 1024px;
+	margin: 0 auto;
+	font: sans-serif;
+	font-size: 100%;
+	background-color: white;
+	line-height: 1.5
+	}
+   
+#header{
+	padding: 30px;
+	font-size: 130%;
+}
+#header_left{
+	float: left;
+}
+
+#header_right {
+	overflow: hidden;
+	text-align: right;
+	}
+	
+#content{
+	margin-top: 40px;
+	margin-left: 20px;
+	font: 12pt sans-serif;
+	color: #2F2E30; 
+}
+#content h1 {line-height: 5%}
+#content p {
+	color:grey
+
+	}
+
+	
+
+#blue-button{
+	margin-top: 20px;
+	margin-bottom : 30px;
+	background-color: #0077bb;
+	color: white;
+	padding: 15px 25px;
+	
+}
+
+
+#container {
+    margin: 0 auto;
+    
+}
+#container h2 {
+	padding-top: 20px;
+	color: #1ea1c2;
+	line-height: 50%;
+}
+
+#accordion input {
+	display: none;
+}
+#accordion label {
+	//background: #eee;
+	border-bottom: 1px solid grey;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .125em;
+	padding: .25em 1em;
+	z-index: 20;
+}
+
+#accordion input:checked + label {
+	//background: #ccc;
+	color: #1ea1c2;
+	}
+	
+#accordion article {
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+#accordion article p {
+	padding: 5px;
+	}
+
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+	height: auto;
+}
+	
